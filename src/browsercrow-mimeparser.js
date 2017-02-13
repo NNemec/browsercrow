@@ -2,11 +2,11 @@
     'use strict';
 
     if (typeof define === 'function' && define.amd) {
-        define(['addressparser'], function(addressparser) {
+        define(['emailjs-addressparser'], function(addressparser) {
             return factory(addressparser);
         });
     } else if (typeof exports === 'object') {
-        module.exports = factory(require('wo-addressparser'));
+        module.exports = factory(require('emailjs-addressparser'));
     } else {
         root.mimeParser = factory(root.addressparser);
     }

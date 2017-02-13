@@ -1,5 +1,6 @@
+'use strict';
+
 module.exports = function(grunt) {
-    'use strict';
 
     // Project configuration.
     grunt.initConfig({
@@ -37,13 +38,12 @@ module.exports = function(grunt) {
                     'chai/chai.js',
                     'sinon/pkg/sinon.js',
                     'requirejs/require.js',
-                    'wo-stringencoding/dist/stringencoding.js',
-                    'wo-utf7/src/utf7.js',
-                    'wo-imap-handler/src/*.js',
-                    'mimefuncs/src/mimefuncs.js',
-                    'wo-addressparser/src/addressparser.js',
-                    'browserbox/src/*.js',
-                    'browserbox/node_modules/axe-logger/axe.js'
+                    'emailjs-stringencoding/src/emailjs-stringencoding.js',
+                    'emailjs-utf7/src/emailjs-utf7.js',
+                    'emailjs-imap-handler/src/*.js',
+                    'emailjs-mime-codec/src/emailjs-mime-codec.js',
+                    'emailjs-addressparser/src/emailjs-addressparser.js',
+                    'emailjs-imap-client/src/*.js',
                 ],
                 dest: 'test/lib/'
             },

@@ -7,11 +7,11 @@ if (typeof define !== 'function') {
 define(function(require) {
 
     var chai = require('chai');
-    var BrowserBox = require('browserbox');
+    var ImapClient = require('emailjs-imap-client');
     var BrowserCrow = require('browsercrow');
 
     var expect = chai.expect;
-    chai.Assertion.includeStack = true;
+    chai.config.includeStack = true;
 
     describe('browsercrow integration tests', function() {
         var client, server;
@@ -20,7 +20,7 @@ define(function(require) {
                 debug: false
             });
 
-            client = new BrowserBox(false, false, {
+            client = new ImapClient(false, false, {
                 auth: {
                     user: "testuser",
                     pass: "demo"

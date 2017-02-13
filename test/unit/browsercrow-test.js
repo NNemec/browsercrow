@@ -11,7 +11,7 @@ define(function(require) {
     var BrowserCrow = require('browsercrow');
 
     var expect = chai.expect;
-    chai.Assertion.includeStack = true;
+    chai.config.includeStack = true;
 
     describe('browsercrow unit tests', function() {
         /* jshint indent:false */
