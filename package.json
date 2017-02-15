@@ -1,8 +1,9 @@
 {
-  "name": "browsercrow",
+  "name": "wo-browsercrow",
   "version": "0.1.0",
   "description": "",
   "main": "src/browsercrow",
+  "repository": "NNemec/wo-browsercrow",
   "scripts": {
     "test": "grunt"
   },
